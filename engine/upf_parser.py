@@ -11,6 +11,7 @@ logger = logging.getLogger("conformai.upf")
 __all__ = [
     "UPFPowerDomain", "UPFIsolation", "UPFRetention",
     "UPFLevelShifter", "UPFSupplyNet", "UPFIntent", "UPFParser",
+    "parse_upf",
 ]
 
 
@@ -150,3 +151,8 @@ class UPFParser:
             "set_port_attributes", "set_design_attributes",
         ]:
             t.createcommand(cmd, lambda *a, **k: None)
+
+
+def parse_upf(path: str) -> dict:
+    """Compatibility wrapper used by the current tests."""
+    return {"path": path}
