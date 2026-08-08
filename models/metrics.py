@@ -1,8 +1,9 @@
+# models/metrics.py
+from __future__ import annotations
 from dataclasses import dataclass
 
-
-@dataclass
-class Metrics:
-    area: float = 0.0
-    timing_slack: float = 0.0
-    power_mw: float = 0.0
+@dataclass(frozen=True, slots=True)
+class DesignMetrics:
+    delay_ns: float = 0.0
+    power_uw: float = 0.0
+    area_cells: int = 0
