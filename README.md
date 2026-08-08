@@ -1,6 +1,6 @@
-# open-lec-agent
+# conformAI
 
-`open-lec-agent` is a Python-first agentic flow for logic equivalence and power-intent validation.
+`conformAI` is a Python-first agentic flow for logic equivalence and power-intent validation.
 
 ## Architecture / Agent Flow
 
